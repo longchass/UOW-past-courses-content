@@ -1,0 +1,269 @@
+//Remeber to combine this with the godamn original one (that has reached Lec 4)
+Lec 5
+User Stories 
+-A User story is a one-sentence description of a work-related task done by a user
+to achieve some goal or result
+--Suitable in Agile development
+--Less formal than UML diagram (UML which is already somewhat informal)
+--Template:
+++"As a <user> I want to <goal> so thath <benefit>
+-Acceptance Criteria
+features that must be present at the completion of the task
+
+
+Use Case
+-An activity that the system performs, usually in response to a request by a user
+-- Use Case define functional requirements
+-- System is decomposed to a set of use cases
+(functional decomposition. requirement traceability
+-- More formal than user Stories
+-2 Techniques to identify use cases
+{
+-User goal technique
+{
+Technique determining what goals must be completed by the system for the user
+(8 steps)
+1.Identify all the potential users for the new system
+2.Classify the potential users in terms of their functional role
+3.Further classify potential users by organisational level
+4.For each type of user interview them to get their goals
+5.Catergorise use cases by type of users
+6.Look for dupes
+7.If diff users need same use cases
+8.Review
+}
+Persona (Use Cases)
+-Typical user that performs a use case with the system
+
+
+-Event decomposition technique
+{
+Elementary business processes (EBP)
+-Simple task in a business process done by one person in one place
+responding to a  business event, adding values and leaves the system and data
+in a stable and consistent consistant state
+Event
+-Something that occurs at a specific time and place, is described and logged by the 
+systems
+--3 types of events
+++External Event
+occurs outside the system
+++Temporal Event
+occurs by reaching a point in time
+++State Event
+occurs inside the sytem that triggers some process
+}
+}
+
+Scenario
+-Unique set of internal activities within a use case
+
+
+3 DIAGRAM
+DOMAIN CLASS DIAGRAM
+USE CASE DIAGRAM (Remeber how to write it)
+ACITIVITY DIAGRAM (Remeber how to draw it)
+
+Lec 6
+
+
+"Things" in problem domain
+
+Problem Domain
+- Specific area of users business that is within scope of the system
+"Things"
+- Items that users work with when doing the tasks that need to be remembered
+-- Example
+++ products, sales, shippers, customers, invoices, payments
+- "Things" are modeled as domain classes(in Sys Ana) or data entities (database)
+
+
+
+Identifying "Things" techniques
+-Brainstorming Technique
+++Checklist of all usual, typical things and brainstorm with a user (5 steps)
+{
+1.Identify users and a set of use cases
+2.Brainstorm with user to identify "Things" involved in the use case
+info that should be captured by the system
+3.Ask the "Things" is it tangible info you should save? Any locations involved?
+Is there any roles involved that you should remember?
+4.Expand brainstorm list by get all type of users and stakeholders
+5.Merge, eliminate dupes
+
+-Noun Technique(if there is no user to help brainstorm)
+++See all nouns that come up when describing the system see if its
+domain class, attribute or unecessary (7 steps)
+{
+1. Use use cases, actors, info of systems, in and out and get all nouns
+2. Use info of existing systems add items or categories if needed
+3. Ask. Is it a unique thing that need saving? Is it within the scope? Does it need to
+remember more than one of these items multiple times
+4. Ask. Is it a sysnonym of other "Things"? Is it an out of sys or from other info? Is it and in from recoring other info
+5. Ask. Is it info about something else? Is it something i need changing?
+6. Create the list
+7. Review the list with people
+}
+
+Domain classes
+-Attribute
+++ Describes a piece of info about the class
+-Identifier or key
+++ Unique attribute that identify an intance of the class(Required in Data entities, optional for domain classes)
+-Compound Attribute
+++ Two or more attribute combined in one to simply the model. Can be Identifier or key
+
+-Association
+++A relationship between classes
+++Called association in UML
+{
+Multiplicity is term for the number of associations between classes (1 to 1 and stuff)
+}
+++Called relationship in Entity-Relationship in Diagram  in database
+{
+Cardinality same as Multiplicity named differently
+}
+-Types of Associations
+{
+Binary 
+-Between two different classes
+Unary
+-Between two same class
+Ternary (three)
+N-ary (N)
+}
+-Writing Attribute{
+In  UML custNumber ID(1)
+In ERD cust number-PK
+In Domain Model Class Diagram custNumber{key}
+}
+
+Entity-Relationship Diagrams (ERD)
+"Things" is called data-entities
+
+Lec 7 
+System Sequence Diagram (SSD)
+- Diagram that use a single use case of interactions between the an actor and the system
+- Lifeline or object lifeline: vertical line under an object on a sequence diagram
+- Has 3 frames {
+Loop frames
+Optional frames
+Alt (if-else) frames
+}
+- Developing SSD (4 steps)
+{
+1. Identify input message
+2. Describe the message from the actor to the system
+++ Name it verb-noun of what is asked to do
+++ Consider parameters the system need
+3. Identify any special conditions on input message
+++ Loop frames
+++ Optional or Alt (if-else) frame
+4. Identify and add output or return values
+}
+
+Use case need to maintain data in domain class DIAGRAM
+CURD technique for use cases
+{
+-Create
+-Read/Report
+-Update
+-Delete
+}
+
+Data Flow Diagrams in Levels (very complex diagram)
+Three levels
+{
+-Context diagram
+-The event-patritioned model (diagram 0)
+-The inner-event system model (diagram 1)
+}
+
+Evaluating DFD
+{
+Exact/correctness: reflect right system requirement
+Minimum complexity: Rule of 7 +- 2 process in a DFD, 7+-2 data flows per process
+Consistency: data flows between modles and inflows, outflows and data storage consistency
+}
+
+Tradition vs Object Oriented approach
+{
+System:
+Collection of processes vs Collection of interacting objects
+Interactions:
+Processes interacts with data entities vs Objects interact with people and each other
+In and Out:
+Processes accepts input and produce outputs vs Objects send and respond to messages
+}
+
+3 DIAGRAM
+DATA FLOW DIAGRAM
+ACITIVITY DIAGRAM
+SYSTEM SEQUENCE DIAGRAM (SSD)
+
+LEC 9
+
+Object Orientation (OO)
+-View data and functions together (basis on data abstraction)
+-Object Oriented Analysis models the problem
+-Object Oriented Design models the solution
+
+Object-oriented design
+- From first-cut system design diagram to CRC (or communication/sequence diagram), to system design diagram 
+
+
+CLASS DIAGRAM
+-Domain class diagram for problems
+-Design class diagram for solution
+Attribute lower case camelback notation
+Navigation-Visibility:{
+-Ability of an object to view and interact with other objects
+-Accomplished by adding an object reference variable to a class
+-Shown by and arrow head line
+Example: slide 24
+}
+Visibility: "-" for private "+" for public
+Types: class, string, integer, double, date
+key: written as {key}
+
+Example:
+-------------------------------------
+		Sale				  		|
+------------------------------------|
+	-saleID:int {key}				|
+	-saleDate: date					|
+	-tax:float					    |
+	-shipping&Handling: currency	|
+-----------------------------------	|
+	+addItem (itemUPCCode)			|
+	+cancelSale (saleID)			|
+	+makePayment(ammount)			|
+	-makeSpecial (string)			|
+------------------------------------|
+
+Creating First cut Design Class Diagram
+{
+1.proceed use case by use case
+2.Pick domain classes that are involved in the use case
+3.Add a controller class to be in charge of the use case
+4.Get initial navigation visibility requirements using the guidelines
+}
+
+
+Class-Responsiblity-Collaboration(CRC) Start on slide 31
+No explanation check slide 44
+
+
+Principles of good object-oriented design: (check the slides)
+Coupling
+Cohesion
+Indirection
+Separation of object responsibility
+
+
+CLASS DIAGRAM
+FIRST-CUT DESIGN CLASS DIAGRAM
+DOMAIN CLASS DIAGRAM
+DESIGN CLASS DIAGRAM(Don't actually need stuyding)
+CRC CARD (important)
+

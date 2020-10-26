@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>110</y>
+      <w>320</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>Message
+
+--
+ text: private string static
+ to: private string static
+ from: private string static
+ subject: public string static
+ sizeLimit: constant public int
+ errorHighlightColor : static public int
+--
+ editMessage() public mutator
+ sendMessage() public acessor
+ openMessage() public acessor
+ replyMessage() public acessor
+ createTemoraryFile() privte mutator
+ autoSpellCheck() accessor
+ autoConnectionCheck() accessor
+ setErrorHlColor() mutator
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>570</y>
+      <w>270</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Message1
+--
+ text: "Hello my friend give me money"
+ to: funnyperson@gmail.com
+ from: ex01@gmail.com
+ subject: Hi</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>390</y>
+      <w>30</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

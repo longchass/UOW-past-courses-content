@@ -1,0 +1,8 @@
+import java.lang.*;
+
+public class toStringtest
+{
+	StringBuilder test = new StringBuilder();
+	test.append("hi").append(System.getProperty("line.separator"));
+
+}

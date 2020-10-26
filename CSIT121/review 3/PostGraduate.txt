@@ -1,0 +1,12 @@
+public class PostGraduate extends Student
+{
+	Address add;
+	public PostGraduate(String f, String l, String ID, Address add)
+	{
+		super(f,l,ID);
+		this 
+	
+
+	}	
+
+}

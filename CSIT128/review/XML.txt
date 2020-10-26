@@ -1,0 +1,11 @@
+<?xml verion="1.0"?>
+<trainlist>
+	<train>
+		<time>08:54</time>
+		<station>Wollongong</station>
+		<platform>2</platform>
+	</train>
+
+
+
+</trainlist>

@@ -1,0 +1,7 @@
+public class StudentManagement
+{
+	HashMap<String, Student> wow = new HashMap<String, Student>();
+
+
+
+}

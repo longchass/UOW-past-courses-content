@@ -1,0 +1,67 @@
+<html>
+<head></head>
+<body>
+	<span >
+	<p  style= "color:blue;">
+		<element id="one" draggable="true" onDrop="drop(event)" ondragend="number(event)">  one </element>
+	, 	<element id="two" draggable="true" onDrop="drop(event)" ondragend="number(event)">  two </element>
+
+	, 	<element id="Three" draggable="true" onDrop="drop(event)" ondragend="number(event)">  three </element>
+
+	, 	<element id="Four" draggable="true" onDrop="drop(event)" ondragend="number(event)">  four </element>
+ 
+	, 	<element id="Five" draggable="true" onDrop="drop(event)" ondragend="number(event)">five </element>
+
+	</p>
+	</span>
+	<span><p style = "color:red;">
+
+		<element id="one" draggable="true" onDrop="drop(event)" onDragOver="dragOver(event)">  1 </element>
+, 
+		<element id="two" draggable="true" onDrop="drop(event)" onDragOver="dragOver(event)">  2 </element>
+
+, 		<element id="Three" draggable="true" onDrop="drop(event)" onDragOver="dragOver(event)">  3 </element>
+
+, 		<element id="Four" draggable="true" onDrop="drop(event)" onDragOver="dragOver(event)">  4 </element>
+
+, 		<element id="Five" draggable="true" onDrop="drop(event)" onDragOver="dragOver(event)">  5 </element>
+</span>
+	<button onclick="draw()">Draw triagle</button>
+</body>
+
+<script>
+	var x;
+	var dropId;
+	function drop(event)
+	{
+	 dropId = event.target.id;
+	console.log(dropId);
+	}
+		function number()
+	{
+		console.log(event.target.id);
+		x = event.target.id;
+		Compare(x, dropId);
+
+	}
+	function dragOver(event)
+	{
+		event.preventDefault();
+
+	}
+
+	function Compare(x, dropId)
+	{
+		if(x == dropId)
+		{
+		
+			console.log("true");
+		}
+		else
+		{
+			console.log("false");
+		}
+	
+	}
+</script>
+</html>

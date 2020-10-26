@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>280</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>BANK
+--
+name PK
+hq-address CK2
+profit
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>280</y>
+      <w>370</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>BRANCH
+--
+name  FK1 REFERENCE BANK (name)
+hq-address  FK2 REFERENCE BANK (hq-address)
+city PK
+street PK
+bldg-number PK
+total-employees
+code [0..1] CK1
+first-name [0..1] CK1
+last-name [0..1] CK1
+date-of-birth [0..1] CK1
+position [0..1] CK1
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>280</y>
+      <w>370</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>EMPLOYEE
+--
+number PK
+first-name CK2
+last-name CK2
+date-of-birth CK2
+city  FK1 REFERENCE BRANCH (city)
+street  FK1 REFERENCE BRANCH (street)
+bldg-number FK1 REFERENCE BRANCH (bldg-number)
+position
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1100</x>
+      <y>560</y>
+      <w>360</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes> OVERSEAS
+--
+country
+tdate PK
+ttime PK
+amount-involved PK
+number  PK FK1 REFERENCE EMPLOYEE (number)
+number PK FK2 REFERENCE ACCOUNT (number)
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>560</y>
+      <w>490</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes> LOCAL
+--
+tdate PK
+ttime PK
+amount-involved PK
+number  PK FK1 REFERENCE EMPLOYEE (number)
+number PK FK2 REFERENCE ACCOUNT (number)
+
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1360</x>
+      <y>310</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>ACCOUNT
+--
+number PK
+balance
+type
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>56</y>
+      <w>104</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>BANK
+--
+name PK
+hq-address CK2
+profit
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>312</x>
+      <y>48</y>
+      <w>336</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>BRANCH
+--
+city PK
+street PK
+bldg-number PK
+total-employees
+name CK1 FK1 REFERENCE BANK (name)
+name CK1
+hq-address CK1 FK1 REFERENCE BANK (hq-address)
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>40</y>
+      <w>376</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>EMPLOYEE
+--
+code PK
+first-name CK2
+last-name CK2
+date-of-birth CK2
+city CK FK1 REFERENCE BRANCH (city)
+street CK FK1 REFERENCE BRANCH (street)
+bldg-number CK FK1 REFERENCE BRANCH (bldg-number)
+position
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>280</y>
+      <w>352</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes> TRANSACTION
+--
+number PK FK1 REFERENCE ACCOUNT (number)
+code PK FK2 REFERENCE EMPLOYEE (code)
+tdate PK
+ammount
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1056</x>
+      <y>72</y>
+      <w>104</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>ACCOUNT
+--
+number PK
+balance
+total years [0..1]
+savings[0..1]
+types of account
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

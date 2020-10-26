@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href='style.xsl'?>
+<!DOCTYPE recordList [
+	<!ELEMENT recordList (record*)>
+	<!ATTLIST recordList name CDATA #REQUIRED>  
+	<!ELEMENT record (Title,Number,Due)>
+	<!ELEMENT Title (#PCDATA)>
+	<!ELEMENT Number (#PCDATA)>
+	<!ELEMENT Due (#PCDATA)>
+]>
+<recordList name="SMITH, John">
+	<record>
+	<Title>Wireless netwrok security / T. Wrightson</Title>
+	<Number>212.12/56</Number>
+	<Due>26-12-2016</Due>
+	</record>
+	<record>
+	<Title>Analysis / T. Tao</Title>
+	<Number>515/305</Number>
+	<Due>26-12-2016</Due>
+	</record>
+	<record>
+	<Title>The art of computer programming/ D.E. Knuth</Title>
+	<Number>005.1/300</Number>
+	<Due>25-11-2016 overdue</Due>
+	</record>
+	<record>
+	<Title>Python for dummies / S. Maruch and A. Ranum</Title>
+	<Number>145.3/57</Number>
+	<Due>01-10-2016 overdue</Due>
+	</record>
+</recordList> 

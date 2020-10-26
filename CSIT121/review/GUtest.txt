@@ -1,0 +1,15 @@
+import javax.swing.*;
+public class GUItest extends JFrame
+{
+	public GUItest()
+	{
+		super();
+		
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+	
+	
+	}
+
+
+}

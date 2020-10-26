@@ -1,0 +1,16 @@
+public class User
+{
+	private String ID;
+	private String FirstName;
+	private String LastName;
+	private int mark;
+
+
+	public User (String ID, String FirstName, String LastName, int mark)
+	{
+	
+	
+	
+	}
+	
+}

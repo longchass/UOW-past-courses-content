@@ -1,0 +1,11 @@
+BANK(name, hq-address, profit)
+PRIMARY-KEY = (name)
+
+BRANCH(name, hq-address, city, street, bldg-number, total-employees, code, first-name, last-name,dob,position)
+PRIMARY KEY = (city, street, bldg-number)
+FOREIGN KEY = (name, hq-address) REFERENCES BANK(name, hq-address)
+
+
+
+
+

@@ -1,0 +1,56 @@
+<html>
+<head></head>
+<body>
+	Enter x-coordinate for 1st vertex
+	<input type="text" id="1x" size="24"/><br/>
+	Enter y-coordinate for 1st vertex
+	<input type="text" id="1y" size="24"/><br/>
+	Enter x-coordinate for 2nd vertex
+	<input type="text" id="2x" size="24"/><br/>
+	Enter y-coordinate for 2nd vertex
+	<input type="text" id="2y" size="24"/><br/>
+	Enter x-coordinate for 3rd vertex
+	<input type="text" id="3x" size="24"/><br/>
+	Enter y-coordinate for 3rd vertex
+	<input type="text" id="3y" size="24"/><br/>
+	Enter fill color code
+	<input type="text" id="color" size="24"/><br/>
+	Enter border color code
+	<input type="text" id="border" size="24"/><br/>
+	
+	<canvas id="canvas" width="960px" height="540px" style="border: 1px  solid black;">
+		Your browser does support canvas.
+	</canvas>
+	
+	<button onclick="draw()">Draw triagle</button>
+</body>
+
+<script>
+	function draw()
+	{
+		var canvas = document.getElementById("canvas");
+		var context = canvas.getContext("2d");
+		
+		var x1 = document.getElementById("1x").value;
+		var y1 = document.getElementById("1y").value;
+		var x2 = document.getElementById("2x").value;
+		var y2 = document.getElementById("2y").value;
+		var x3 = document.getElementById("3x").value;
+		var y3 = document.getElementById("3y").value;
+		
+		context.beginPath();
+		context.moveTo(x1,y1);
+		context.lineTo(x2,y2);
+		context.lineTo(x3,y3);
+		context.closePath();
+		
+		context.fillStyle = document.getElementById("color").value;
+		context.fill();
+		
+		context.strokeStyle = document.getElementById("border").value;
+		context.lineWidth = "3";
+		context.stroke();
+
+	}
+</script>
+</html>

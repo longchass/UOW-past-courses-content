@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<button onClick="sayHi()">
+Hello console
+</button>
+<button onClick="sayHello()
+<script>
+function sayHi()
+{
+	console.log(2)
+	
+}
+
+
+
+</body>
+
+
+
+</html>

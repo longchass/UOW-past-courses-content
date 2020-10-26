@@ -1,0 +1,9 @@
+<xml version="1.0" ?>
+<scheduleList Destination="Wollongong - Kiama" TimeLeft = leaving in 5 minutes>
+<schedule>
+	<Station>Wollongong</Station>
+	<Time>08:54</Time>
+	<Platform>08:56</Platform>
+</schedule>
+
+	

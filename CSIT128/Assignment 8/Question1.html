@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+ textarea {
+	rows: 2;
+ }
+</style>
+<script>
+function takeData()
+{
+var fullDetail = {
+	Name: document.getElementById("name").value,
+	Number: document.getElementById("number").value,
+	code: document.getElementById("code").value,
+	title: document.getElementById("title").value,
+	plagarism: document.getElementById("plagarism").value,
+	attendance: document.getElementById("attendance").value,
+
+};
+document.getElementById("result").value = JSON.stringify(fullDetail, null, 2);
+console.log(JSON.stringify(fullDetail, null, 2));
+}
+
+</script>
+</head>
+
+<body>
+
+<table>
+<tr>
+<td><span> Enter full name:</span></td><td><input id="name" type="text"/></td></br>
+</tr>
+<tr>
+<td><span> Enter student number:</span></td><td><input id="number" type="text"/></td></br>
+</tr>
+<tr>
+<td><span> Enter subject code:</span></td><td><input id="code" type="text"/></td></br>
+</tr>
+<tr>
+<td><span> Enter subject title:</span></td><td><input id="title" type="text"/></td></br>
+</tr>
+<tr>
+<td><span> Enter plagarism declaration:</span></td><td><textarea id="plagarism" type="text" rows = "3" cols ="60"></textarea></td></br>
+</tr>
+<tr>
+<td><span> Enter attendance declaration:</span></td><td><textarea id="attendance" type="text" rows = "3" cols="60"></textarea></td></br>
+</tr>
+<tr>
+<td><span><button onClick="takeData()"> JSON Stringify</button></span></td><td><textarea id="result" type="text" rows = "12" cols="60"></textarea></td>
+</tr>
+</table>
+
+
+
+</body>
+
+</html>

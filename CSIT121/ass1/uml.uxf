@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>1</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>468</x>
+      <y>278</y>
+      <w>55</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>_Product
+--
+#id: String
+#Description : String
+#Recommended Price per unit : double
+#Unit : int[1]
+#Weight : int
+#Packing Date : Date
+#Expiry Date : Date
+#
+--
++getInformationForSavingToFile(): String
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++product( String Description, double ReccPrice, int unit, int Weight)
++product()
++getDescription(): String
++getPrice(): double
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>493</x>
+      <y>315</y>
+      <w>3</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>261</x>
+      <y>333</y>
+      <w>444</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;20.0;4420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>261</x>
+      <y>334</y>
+      <w>3</w>
+      <h>7</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>333</y>
+      <w>3</w>
+      <h>7</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>654</x>
+      <y>338</y>
+      <w>87</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Fresh Product
+--
+#Packing Date: Date[01/01/1900]
+#UnitType: String
+--
++fresh(String IDinput, String Description, double ReccPrice, int unit, int Weight, String unitType, String inputExpiry)
++fresh(String IDinput, String Description, double ReccPrice, int unit, int Weight, String unitType, String inputPacking, String inputExpiry)
++toString(): String
++getInformationForSavingToFile(): String
++getAttributeDescriptionForSavingTofile(): String
++getInformationForSavingToFile(): String
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++getDescription(): String
++getPrice(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>370</y>
+      <w>3</w>
+      <h>19</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>386</y>
+      <w>102</w>
+      <h>3</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;1000.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>596</x>
+      <y>427</y>
+      <w>114</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Fresh Cake
+--
+-CakeDiameter:int
+-BakerName
+--
++freshCake(String IDinput, String Description, double ReccPrice, int unit, int Weight, String unitType, String inputPacking, String inputExpiry, int CakeDiameter, String BakerName)
++freshCake(String IDinput, String Description, double ReccPrice, int Weight,  String unitType, String inputExpiry, int CakeDiameter, String BakerName)
++getInformationForSavingToFile(): String
++getAttributeDescriptionForSavingTofile(): String
++toString(): String
++getInformationForSavingToFile(): String
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++getDescription(): String
++getPrice(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>386</y>
+      <w>3</w>
+      <h>43</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;410.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>713</x>
+      <y>427</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Fresh spice
+--
+-jar: String
+-components: String
+--
++freshSpice(String IDinput, String Description, double ReccPrice, int unit, int Weight,  String unitType, String inputPacking, String inputExpiry, String jar, String components)
++freshSpice(String IDinput, String Description, double ReccPrice, int Weight,  String unitType, String inputExpiry, String jar, String components)
++getInformationForSavingToFile(): String
++getAttributeDescriptionForSavingTofile(): String
++toString(): String
++getInformationForSavingToFile(): String
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++getDescription(): String
++getPrice(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>759</x>
+      <y>386</y>
+      <w>3</w>
+      <h>43</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;410.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>207</x>
+      <y>339</y>
+      <w>117</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Packed Product
+--
+#Nutrition: Nutrition
+#Dimension: Dimension[0,0,0]
+#UnitType: UnitTypeLimit
+#Packing Date: Date[01/01/1900]
+#Expiry Date: Date[01/01/3000)
+--
++packed(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, UnitTypeLimit unitType, String inputPacking, String inputExpiry, Nutrition nutrition)
++packed(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, UnitTypeLimit unitType, String inputPacking, Nutrition nutrition)
++toString(): String
++getInformationForSavingToFile(): String
++getAttributeDescriptionForSavingTofile(): String
++getInformationForSavingToFile(): String
++getVolumn(): int
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++getDescription(): String
++getPrice(): double
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>171</x>
+      <y>334</y>
+      <w>21</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>Nutrition
+--
+-Quantity: int
+-Energy: int
+-Protein: int
+-Fat: int
+-Sugars: int
+-Salt: int
+--
+returnType(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>171</x>
+      <y>351</y>
+      <w>21</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>UnitTypeLimit
+--
+_+Box:enum type_
+_+Bottle:enum type_
+_+Pack:enum type_
+--
+returnType(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>191</x>
+      <y>356</y>
+      <w>18</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>191</x>
+      <y>340</y>
+      <w>17</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>262</x>
+      <y>378</y>
+      <w>3</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>390</y>
+      <w>102</w>
+      <h>3</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;1000.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>319</x>
+      <y>390</y>
+      <w>3</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;370.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>276</x>
+      <y>427</y>
+      <w>114</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Packed Meat
+--
+-meatType:String
+-grade:int
+--
++packedMeat(String IDinput, String Description, double ReccPrice, int unit, int Weight, UnitTypeLimit unitType, Nutrition nutrition, String meatType, int grade)
++packedMeat(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, UnitTypeLimit unitType, String inputPacking, String inputExpiry, Nutrition nutrition, String meatType, int grade)
++packed(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, UnitTypeLimit unitType, String inputPacking, Nutrition nutrition)
++toString(): String
++getInformationForSavingToFile(): String
++getAttributeDescriptionForSavingTofile(): String
++getInformationForSavingToFile(): String
++getVolumn(): int
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++getDescription(): String
++getPrice(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>390</y>
+      <w>3</w>
+      <h>39</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;370.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>146</x>
+      <y>427</y>
+      <w>114</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>PackedMRE
+--
+-Producer: String
+-Code: String
+--
++packedMRE(String IDinput, String Description, double ReccPrice, int unit, int Weight, UnitTypeLimit unitType, Nutrition nutrition, String Producer, String code)
++packedMRE(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, UnitTypeLimit unitType, String inputPacking, String inputExpiry, Nutrition nutrition, String Producer, String code)
++packed(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, UnitTypeLimit unitType, String inputPacking, Nutrition nutrition)
++toString(): String
++getInformationForSavingToFile(): String
++getAttributeDescriptionForSavingTofile(): String
++getInformationForSavingToFile(): String
++getVolumn(): int
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++getDescription(): String
++getPrice(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>338</y>
+      <w>103</w>
+      <h>38</h>
+    </coordinates>
+    <panel_attributes>Household Product
+--
+#Packing Date: Date[01/01/1000]
+#Expiry Date: Date[01/01/3000]
+#Dimension: Dimension[0,0,0]
+--
++household(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, String unitType, String inputPacking)
++household(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, String unitType, String inputPacking, String inputExpiry)
++fresh(String IDinput, String Description, double ReccPrice, int unit, int Weight, String unitType, String inputPacking, String inputExpiry)
++toString(): String
++getVolumn(): int
++getInformationForSavingToFile(): String
++getAttributeDescriptionForSavingTofile(): String
++getInformationForSavingToFile(): String
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++getDescription(): String
++getPrice(): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>494</x>
+      <y>375</y>
+      <w>3</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>402</x>
+      <y>386</y>
+      <w>152</w>
+      <h>3</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;1500.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>551</x>
+      <y>386</y>
+      <w>3</w>
+      <h>6</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>402</x>
+      <y>386</y>
+      <w>3</w>
+      <h>7</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>344</x>
+      <y>391</y>
+      <w>129</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>HouseHold Stationery
+--
+-inkType:String
+-penType:String
+--
++householdStationery(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, String unitType, String inputPacking, String inkType, String penType)
++householdStationery(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, String unitType, String inputPacking, String inputExpiry, String inkType, String penType)
++toString(): String
++getInformationForSavingToFile(): String
++getAttributeDescriptionForSavingTofile(): String
++getInformationForSavingToFile(): String
++getVolumn(): int
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++getDescription(): String
++getPrice(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>497</x>
+      <y>390</y>
+      <w>134</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>HouseHold Kitchen Ware
+--
+-Manufacturer:String
+-Series:String
+--
++householdKitchenWare(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, String unitType, String inputPacking, String Manufacturer, String Series)
++householdKitchenWare(String IDinput, String Description, double ReccPrice, int unit, int Weight, Dimension dimension, String unitType, String inputPacking, String inputExpiry, String Manufacturer, String Series)
++toString(): String
++getInformationForSavingToFile(): String
++getAttributeDescriptionForSavingTofile(): String
++getInformationForSavingToFile(): String
++getVolumn(): int
+_+sortByPrice(ArrayList&lt;product&gt; list1):ArrayList&lt;product&gt;_
++editProductInformation(String Description, int unit, double price, int weight): void_
+_+getAttributeDescriptionForSavingTofile(): String_
+_+findProductFromDescription(ArrayList&lt;product&gt; shoppingCart, String input)_
+_+allProductToString(ArrayList&lt;product&gt; cart): String_
++verifyUnitType(String input): void_
++verifyExpireProduct(Date input): void_
++comparePrice(double input): void_
++getDescription(): String
++getPrice(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>365</x>
+      <y>348</y>
+      <w>21</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>Dimension
+--
+-Width: int
+-Height: int
+-Depth: int
+--
+returnType(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>323</x>
+      <y>354</y>
+      <w>44</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>385</x>
+      <y>354</y>
+      <w>67</w>
+      <h>4</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;650.0;10.0</additional_attributes>
+  </element>
+</diagram>

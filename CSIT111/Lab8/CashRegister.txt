@@ -1,0 +1,14 @@
+Asharma@uow.edu.au
+
+==============================
+CashRegister
+------------------------------
+-itemPrice:int
+-totalPurchase:double
+-totalItems:int
+------------------------------
++CashRegister()
++scanPrice(double)
++getTotalPurchase:double
++getTotalItems:int
+==============================

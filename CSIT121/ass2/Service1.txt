@@ -1,0 +1,2 @@
+23423,shoppie,a shop hook system, 2 main system, 5.22, 100.23, true
+25423,cashie,a cash payment system,5 main system, 5.22, 100.23, true

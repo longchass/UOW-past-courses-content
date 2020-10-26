@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE trainlist[
+	<!ELEMENT trainlist (train*)>
+	<!ATTLIST trainlist CDATA #REQUIRED>
+	<!ELEMENT train (time, station, platform)>
+	<!ELEMENT time (#PCDATA)>
+	<!ELEMENT station (#PCDATA)>
+	<!ELEMENT platform (#PCDATA)>
+]>
+
+<trainlist state="NSW" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="lol.xsd">
+	<train>
+		<time>08:54</time>
+		<station>Wollongong</station>
+		<platform>2</platform>
+	</train>
+	<train>
+		<time>08:56</time>
+		<station>Coniston</station>
+		<platform>2</platform>
+	</train>
+	<train>
+		<time>09:01</time>
+		<station>Unanderra</station>
+		<platform>1</platform>
+	</train>
+	<train>
+		<time>09:07</time>
+		<station>Dapto</station>
+		<platform>2</platform>
+	</train>
+	<train>
+		<time>09:15</time>
+		<station>Albion Park</station>
+		<platform>2</platform>
+	</train>
+	<train>
+		<time>09:21</time>
+		<station>Oak Flats</station>
+		<platform>1</platform>
+	</train>
+</trainlist>

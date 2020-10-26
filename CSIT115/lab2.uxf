@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>70</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Address
+--
+
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>70</y>
+      <w>120</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Branch
+--
+
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>70</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>employee
+--
+
+
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>230</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Trip
+--
+
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>230</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Customer
+--
+
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>230</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Booking
+--
+
+...
+bg=#dddddd
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

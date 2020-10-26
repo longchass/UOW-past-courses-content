@@ -1,0 +1,8 @@
+3314142,First3,Last3,user,Password,true,lola
+1223232,First,Last,usernameasd,Password2,Customer,true,addr,lol,4,NSW,1234,sdf,loasdf@asd.com,malo,NSW,123,loasdf@asd.com
+1223232,First,Last,usernamek,Password2,VIP,true,addr,lol,4,NSW,1234,sdf,loasdf@asd.com,malo,NSW,123,asdf@asd.com
+1223232,First,Last,usernaa,Password2,VIP,true,addr,lol,4,NSW,1234,sdf,loasdf@asd.com,malo,NSW,123,asd@asd.com
+1223232,First1,Last1,username1,Passasdfasd1,Customer,true,addr,lol,4,NSW,1234,loasdf@asd.com
+2314142,First3,Last3,username2,passplea,true
+2314142,lola,lola,lola,Paadsfsadfss3,true,loasdf@asd.com
+2314142,First3,Last3,username3,Paadsfsadfss3,true

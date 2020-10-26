@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE scheduleList[
+	<!ELEMENT scheduleList (schedule*)>
+	<!ATTLIST scheduleList Destination CDATA #REQUIRED>
+	<!ATTLIST scheduleList TimeLeft CDATA #REQUIRED>
+	<!ELEMENT schedule (Station,Time,Platform)>
+	<!ELEMENT Station (#PCDATA)>
+	<!ELEMENT Time (#PCDATA)>
+	<!ELEMENT Platform (#PCDATA)>]
+	
+	>
+
+
+<scheduleList Destination = "Wollongong - Kiama" TimeLeft = "leaving in 5 minutes"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="lol.xsd">
+<schedule>
+	<Station>Wollongong</Station>
+	<Time>08:54</Time>
+	<Platform>2</Platform>
+</schedule>
+<schedule>
+	<Station>Coniston</Station>
+	<Time>08:56</Time>
+	<Platform>2</Platform>
+</schedule><schedule>
+	<Station>Unanderra</Station>
+	<Time>1</Time>
+	<Platform>08:56</Platform>
+</schedule><schedule>
+	<Station>Dapto</Station>
+	<Time>08:54</Time>
+	<Platform>08:56</Platform>
+</schedule><schedule>
+	<Station>Albion Park</Station>
+	<Time>08:54</Time>
+	<Platform>08:56</Platform>
+</schedule><schedule>
+	<Station>Oak Flats</Station>
+	<Time>08:54</Time>
+	<Platform>08:56</Platform>
+</schedule><schedule>
+	<Station>Shellharbour</Station>
+	<Time>08:54</Time>
+	<Platform>08:56</Platform>
+</schedule><schedule>
+	<Station>Minnamurra</Station>
+	<Time>08:54</Time>
+	<Platform>08:56</Platform>
+</schedule><schedule>
+	<Station>Bombo</Station>
+	<Time>08:54</Time>
+	<Platform>08:56</Platform>
+</schedule><schedule>
+	<Station>Kiama</Station>
+	<Time>08:54</Time>
+	<Platform>08:56</Platform>
+</schedule>
+</scheduleList>
+
+	

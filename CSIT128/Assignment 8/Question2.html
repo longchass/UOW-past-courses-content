@@ -1,0 +1,77 @@
+<html>
+<script>
+function show(){
+	var xhttp = new XMLHttpRequest();
+	
+	xhttp.onreadystatechange = function(){
+		readyStateChangeHandler(xhttp);
+	 
+	}
+	
+	
+	xhttp.open("GET", "Question2.json", true);
+	xhttp.send();
+	
+	}
+	function readyStateChangeHandler(xhttp){
+		if(xhttp.readyState == 4)
+		{
+			if(xhttp.status == 200)
+			{
+				handleStatusSucess(xhttp);
+			}
+			else
+			{
+				handleStatusFail(xhttp);
+			}
+		
+		}
+	
+	}
+	function handleStatusFail(xhttp){
+		document.getElementById("show").innerHTML = "Request failed "+xhttp.status;
+	}
+	function handleStatusSucess(xhttp){
+		var jsonText = xhttp.responseText;
+		
+		var obj = JSON.parse(jsonText);
+		console.log(obj);
+		display(obj);
+	
+	
+	}
+	
+	function display(obj)
+	{
+		var html = "<h1>Search result:</h1>"
+					+"Search keyword: "+obj.result.key+"</br>"
+					+"<table>";
+			for(var i = 0; i < obj.result.video.length; i++)
+			{
+				var videoAtrributes = obj.result.video[i];
+				
+				html +="<tr>";
+				html +="<td><a href="+videoAtrributes.link+" target='_blank'><img src="+videoAtrributes.image+" width='200px'></a></td>"; 
+				html +="<td>";
+				html +="<h2 style='color:#D55B88'>"+videoAtrributes.title+"</h2>";
+				html +=videoAtrributes.channel+"</br>";
+				html +=videoAtrributes.view+"</h2></br>";
+				html +="<font color='white' style='background-color: black'>"+videoAtrributes.length+"</font>";
+				html +="</td>";
+				html +="</tr>";
+				
+
+				document.getElementById("show").innerHTML = html;
+	}
+	html +="</table>";
+}
+</script>
+<body>
+
+<button onclick="show()">Get Search Result</button>
+<div id="show"></div>
+
+
+
+
+</html>

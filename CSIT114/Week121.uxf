@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>112</y>
+      <w>147</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>ticket
+--
+court name
+officer name
+driver name
+driver ID
+ammount of fine
+verdict and trialdate
+court date
+date and time </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>602</x>
+      <y>350</y>
+      <w>147</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>driver
+--
+driver lisence
+first name
+last name
+car plate
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>602</x>
+      <y>112</y>
+      <w>147</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>officer
+--
+officer number
+first name
+last name
+date and time of the accident
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>518</y>
+      <w>147</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>court
+-
+judge
+verdict
+court date</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>224</y>
+      <w>35</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;420.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>476</x>
+      <y>224</y>
+      <w>140</w>
+      <h>259</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>180.0;340.0;10.0;340.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>518</x>
+      <y>161</y>
+      <w>98</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+</diagram>

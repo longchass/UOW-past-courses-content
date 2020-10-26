@@ -1,0 +1,206 @@
+<html>
+<head>
+<style>
+big{font-size:50px;
+}
+
+</style>
+
+</head>
+<body>
+	<h1>Question 1</h1>
+	<button type="button" onclick='document.getElementById("student").innerHTML="<big>6482132 Long Le<big>"'> Show </button>
+	<button type="button" onclick='document.getElementById("student").innerHTML=""'> Hide </button>
+	<button onclick="AlertStudent()"> Alert </button>
+	<button type="button" onclick="StudentConsole()"> Console </button>
+	<span id = "student">HERE</span>
+	</br>
+	<button type="button" onclick='document.getElementById("Subject").innerHTML="<big>CSIT128 (LP219) Introduction to Web Technology<big>"'> Show </button>
+	<button type="button" onclick='document.getElementById("Subject").innerHTML=""'> Hide </button>
+	<button onclick="AlertSubject()"> Alert </button>
+	<button type="button" onclick="SubjectConsole()"> Console </button>
+	<span id = "Subject">HERE</span>
+	</br>
+	<button type="button" onclick='document.getElementById("Assignment").innerHTML="<big>Assignment 4 Monday 9 September 2019 <big>"'> Show </button>
+	<button type="button" onclick='document.getElementById("Assignment").innerHTML=""'> Hide </button>
+	<button onclick="AlertAssignment()"> Alert </button>
+	<button type="button" onclick="AssignmentConsole()"> Console </button>
+	<span id = "Assignment">HERE</span>
+	</br>
+	<button type="button" onclick='document.getElementById("lab").innerHTML="<big>Friday 8:30am to 10:30am<big>"'> Show </button>
+	<button type="button" onclick='document.getElementById("lab").innerHTML=""'> Hide </button>
+	<button onclick="AlertLab()"> Alert </button>
+	<button type="button" onclick="StudentConsole()"> Console </button>
+	<span id = "lab">HERE</span>
+	
+	<h1>Question 2</h1>
+	
+	<p id="para1">I acknowledge that this assignment is scheduled to be marked in the computer lab in Week 8 and Week 9, and absence from the labs may result in zero mark.</p>
+	<button onClick="switchPara()">Switch</button>
+	<p id="para2">I have read the policy for plagiarism at Wollongong University. I declare that this assignment solution is entirely my work.</p>
+	
+	<h1>Question 3</h1>
+	<button onClick="animalClick('Cat')">Cat</button>
+	<button onClick="animalClick('Dog')">Dog</button>
+	<button onClick="animalClick('Frog')">Frog</button>
+
+	<input type="text" id="aniText"/><br/>
+	<span id="aniMes"></span></br>
+	<img id="aniPic" width="150px" height="150px" border="none"/ >
+	
+	<h1>Question 4</h1>
+	<p><big id="hour">0</big><big>:</big><big id ="minute">0</big></p>
+	<button onClick="increaseHour()"> increase hour </button>
+	<button onClick="increaseMinute()"> increase minute </button>
+	
+	<h1>Question 5</h1>
+	<img src="cat.jpg" id="p1"/ onClick = "jump(1)" width="200px" height="200px"/>
+	<img src="Dog.jpg" id="p2"/ onClick = "jump(2)"width="200px" height="200px"/>
+	<img src="frog.jpg" id="p3"/ onClick = "jump(3)"width="200px" height="200px"/>
+	
+</body>
+<script>
+ var hour = 1;
+ var minute = 1;
+function AlertStudent()
+{
+	alert("6482132 Long Le");
+}
+function StudentConsole()
+{
+	console.log("6482132 Long Le");
+}
+function AlertSubject()
+{
+	alert("CSIT128 (LP219) Introduction to Web Technology");
+}
+function SubjectConsole()
+{
+	console.log("CSIT128 (LP219) Introduction to Web Technology");
+}
+function AlertAssignment()
+{
+	alert("Assignment 4 Monday 9 September 2019");
+}
+function AssignmentConsole()
+{
+	console.log("Assignment 4 Monday 9 September 2019");
+}function AlertLab()
+{
+	alert("Friday 8:30am to 10:30am");
+}
+function LabConsole()
+{
+	console.log("Friday 8:30am to 10:30am");
+}
+function animalClick(button){
+	var text = document.getElementById("aniText");
+	var message = document.getElementById("aniMes");
+	var pic = document.getElementById("aniPic");
+	
+	if(button == "Cat")
+	{
+		text.value ="User clicks Cat";
+		message.innerHTML="Cat is clicked";
+		pic.src="Cat.jpg";
+	
+	}
+	else if(button == "Dog")
+	{
+		text.value ="User clicks Dog";
+		message.innerHTML="Dog is clicked";
+		pic.src="Dog.jpg";
+	
+	}	
+	else if(button == "Frog")
+	{
+		text.value ="User clicks Frog";
+		message.innerHTML="Frog is clicked";
+		pic.src="frog.jpg";
+	
+	}
+
+}
+var position = "para1-para2"
+function switchPara(){
+	var para1 = document.getElementById("para1");
+	var para2 = document.getElementById("para2");
+	
+	if(position == "para1-para2")
+	{
+		para2.innerHTML =  "I acknowledge that this assignment is scheduled to be marked in the computer lab in Week 8 and Week 9, and absence from the labs may result in zero mark.";
+		para1.innerHTML =  "I have read the policy for plagiarism at Wollongong University. I declare that this assignment solution is entirely my work.";
+		position = "para2-para1";
+	}
+	else
+	{
+		para1.innerHTML =  "I acknowledge that this assignment is scheduled to be marked in the computer lab in Week 8 and Week 9, and absence from the labs may result in zero mark.";
+		para2.innerHTML =  "I have read the policy for plagiarism at Wollongong University. I declare that this assignment solution is entirely my work.";
+		position = "para1-para2";
+	}
+}
+
+
+
+
+ function increaseHour()
+ {
+	document.getElementById("hour").innerHTML  = hour++;
+	if(hour >= 24)
+	{
+		hour = 0;
+		
+	}
+ }
+ function increaseMinute()
+ {
+	document.getElementById("minute").innerHTML  = minute ++;
+	if(minute >= 60)
+	{
+		minute = 0;
+		
+	}
+ }
+var opost = "Cat-Dog-Frog"; 
+ function jump(number)
+ {
+
+	var p1 = document.getElementById("p1");
+	var p2 = document.getElementById("p2");
+	var p3 = document.getElementById("p3");
+	
+	if(opost == "Cat-Dog-Frog")
+	{
+		if(number ==1 || number ==2)
+		{
+			alert("Don't click me, click the frog");
+		}else
+		{
+			p1.src = "frog.jpg";
+			p2.src = "cat.jpg";
+			p3.src = "Dog.jpg";
+			
+			opost = "Frog-Cat-Dog";
+		
+		}
+	}
+		else{
+			if(number == 2 || number ==3)
+			{
+			alert("Don't click me, click the frog");
+			}
+			else{
+			
+				p1.src = "cat.jpg";
+ 				p2.src = "Dog.jpg";
+				p3.src = "frog.jpg";
+			
+			
+			}
+		
+	
+	
+		}
+}
+</script>
+</html>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>198</y>
+      <w>441</w>
+      <h>369</h>
+    </coordinates>
+    <panel_attributes>/User/
+{abstract}
+-
+-id: String
+-firstName: String
+-lastName: String
+-username: String
+-password: String
+-userType: UserType
+-permission: PermissionType
+-status: boolean
+-
++User(String, String, String,String,String,UserType,PermissionType,boolean)
+#setId(String):void
++getUsername(): String
++setPassword(String): void
++getUserType(): UserType
++setUserType(UserType): void
++getPermission(): PermissionType
++setPermission(PermissionType): void
++getFullName(): String
++verifyUsernameAndPassword(String, String): boolean
++verifyUsername(String): boolean
++toString(): String
+_+findUserByUsername(ArrayList&lt;User&gt;, String): User_
+_+logInByUSernameAndPassword(ArrayList&lt;User&gt;, String, String): boolean_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>738</x>
+      <y>225</y>
+      <w>162</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+UserType
+-
+Student
+Teacher
+Parent
+-</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>711</x>
+      <y>360</y>
+      <w>225</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+PermissionType
+-
+Edit("Allow to view or edit", 1)
+View("Only allow to view the result", 2)
+Test("Only allow to do the test", 3)
+None("Don't have any permission", 5)
+-
+-name: String
+-id: int
+-
++PermissionType(String, int)
++getName():String
++getId(): int
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>612</y>
+      <w>504</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>/SchoolUser/
+{abstract}
+-
+-ClassID: String
+-Grade: String
+-SchoolName:String
+-
++SchoolUser(String, String, String,String,String,UserType,boolean,String, String, String)
++getClassID(): String
++setClassID(String): void
++getGrade(): String
++setGrade(String): void
++getSchoolName(): String
++setSchoolName(String): void
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>738</x>
+      <y>612</y>
+      <w>477</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Student
+-
+-
++Student(String, String, String,String,String,UserType,boolean,String, String, String)
+#setId(String: void
++setPermission(PermissionType): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>738</x>
+      <y>729</y>
+      <w>477</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Teacher
+-
+-
++Teacher(String, String, String,String,String,UserType,boolean,String, String, String)
+#setId(String): void
++setPermission(PermissionType): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>333</x>
+      <y>63</y>
+      <w>216</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>UserLoginAndRegistration
+-
+-users: ArrayList&lt;User&gt;
+-
++UserLoginAndRegistration()
++verifyLogIn(String, String): boolean
++addUser(User): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>648</x>
+      <y>360</y>
+      <w>63</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>270</y>
+      <w>27</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>450</y>
+      <w>45</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>270</y>
+      <w>72</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>558</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>702</y>
+      <w>54</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>648</y>
+      <w>27</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>648</y>
+      <w>45</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>711</x>
+      <y>756</y>
+      <w>45</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>423</x>
+      <y>144</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="Question2.xsl"?>
+
+<RecordList name = "John Smith">
+	<Record>
+		<title>Wireless network security</title>
+		<author>T. Wrightson</author>
+		<Number>212.12/56</Number>
+		<date>26-12-2016</date>
+		<overDue></overDue>
+	</Record>
+	<Record>
+		<title>Analysis</title>
+		<author>T. Tao</author>
+		<Number>515/305</Number>
+		<date>23-12-2016</date>
+		<overDue></overDue>
+	</Record>	
+	<Record>
+		<title>The art of computer programming</title>
+		<author>D.E. Knuth</author>
+		<Number>005.1/300</Number>
+		<date>25-11-2016</date>
+		<overDue>overdue</overDue>
+	</Record>
+	<Record>
+		<title>Python for dummies</title>
+		<author>S. Maruch and A. Ranum</author>
+		<Number>145.3/57</Number>
+		<date>01-10-2016</date>
+		<overDue>overdue</overDue>
+	</Record>
+</RecordList>

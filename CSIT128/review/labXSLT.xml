@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="labXSLT.xsl"?>
+<exam subject="MATH 2113">
+<title>Abstract Algebra</title>
+<venue>20.G01</venue>
+<date>15/11/2018</date>
+<time>1PM-4PM</time>
+<note>Closed book exam, calculator allowed</note>
+</exam>

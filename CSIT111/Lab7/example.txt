@@ -1,0 +1,12 @@
+class Example 
+	pubic static void main(String[] args){
+		method1();
+	}
+	
+	pubic static void method1()
+	{
+		int ap = 5;
+		
+		Sy
+	}
+	
